@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './Hamburger.module.css';
-const Hamburger = () => {
-    return ( <div className={styles.hamburger}>
+import './reset.css';
+const Hamburger = (props) => {
+    return ( <div onClick={props.onClick} className={`${styles['hamburger']} ${props.burgerState && styles.active}`}>
       <div></div>
       <div></div>
       <div></div>

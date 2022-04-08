@@ -1,5 +1,5 @@
 .navigation{
-   margin: 0 0 0 280px;
+   margin: 0 30px 0 auto;
 }
 .navigation ul{
     list-style: none;
@@ -8,24 +8,50 @@
 }
 .navigation li {
     margin: 0 15px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
-    transition: 0.3s;
-    padding: 5px;
-    flex-grow: 1;
+    transition: 0.5s;
+    padding: 5px 10px;  
+    border: 1px solid transparent;
 }
 .navigation li:hover{
     cursor: pointer;
-
-     background-color: rgba(188, 136, 64, 0.775);
-    border: 1px solid rgba(190, 135, 59, 0.775);
-    border-radius: 5px;
-   
+    background-color: #360e5e;
+    border-radius: 10px;
 }
-
-@media (max-width: 1174px){
-
+@media(max-width: 1031px){
     .navigation{
-    margin: 0 0 0 240px;
-    }    
+        top:0px;
+        right: -100vh;
+        position: fixed;
+        height: 100%;
+        width: calc(100vw - 50%);
+        background-color: white;
+        z-index: 2;
+        margin: 0;
+        border: 2px solid #e8e8e8;
+        transition: 0.3s;
+    }
+    .navigation ul{
+        margin: 100px 0;
+        color: black;
+        align-items: center;
+        flex-flow: column;
+    }
+    .navigation li{
+        text-align: center;
+        font-size: 20px;
+        border-top: 2px solid #e8e8e8;
+        width: 100%;
+    }
+    .navigation li:hover{
+        border-radius: 0;
+        color: white;
+    }
+    li:last-of-type{
+        border-bottom: 2px solid #e8e8e8;
+    }
+    .navigation.active{
+        right: 0;
+    }
 }

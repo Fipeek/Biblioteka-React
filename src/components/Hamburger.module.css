@@ -4,14 +4,15 @@
         display: none;
     }
 }
-@media(max-width: 1024px){
+@media(max-width: 1031px){
     .hamburger{
         display: block;
         width: 30px;
         height: 30px;
-        /* background-color: black; */
         display: flex;
         flex-flow: column;
+        margin: 0 30px 0 auto;
+        z-index: 3;
     }
     .hamburger div{
         width: 100%;
@@ -20,5 +21,24 @@
         border: 1px solid transparent;
         border-radius: 3px;
         background-color: white;
+        transition: 0.3s;
     }
+    .hamburger.active div{
+        background-color: black;
+        
+    }
+    .hamburger.active div:nth-of-type(2){
+        opacity: 0;
+    }
+    .hamburger.active div:nth-of-type(1){
+        transform: rotate(45deg);
+        transform-origin: left;
+    }
+    .hamburger.active div:nth-of-type(3){
+        transform: rotate(-40deg); 
+        transform-origin: left;
+    }
+    
+
 }
+
