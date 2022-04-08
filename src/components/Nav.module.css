@@ -1,0 +1,31 @@
+.navigation{
+   margin: 0 0 0 280px;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+.navigation li {
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 5px;
+    flex-grow: 1;
+}
+.navigation li:hover{
+    cursor: pointer;
+
+     background-color: rgba(188, 136, 64, 0.775);
+    border: 1px solid rgba(190, 135, 59, 0.775);
+    border-radius: 5px;
+   
+}
+
+@media (max-width: 1174px){
+
+    .navigation{
+    margin: 0 0 0 240px;
+    }    
+}
