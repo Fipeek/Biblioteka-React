@@ -11,12 +11,7 @@
     height: 100px;
     background-color: #52099b;
     display: flex;  
-    border: 2px solid transparent;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     align-items: center;
-    flex-grow: 1;
-    flex-basis: 40%;
 }
 .logo {
     background-image: url('../images/logo.png');

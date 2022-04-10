@@ -1,0 +1,36 @@
+.article {
+display: flex;
+flex-flow: row;
+}
+.article h1{
+    font-size: 35px;
+    text-align: start;
+}
+.article h2{
+    color: #c58ffa;
+    font-size: 30px;
+}
+.article p{
+    text-align: justify;
+    font-size: 22px;
+    color: white;
+}
+.article img{
+ width: 700px;
+ height: 300px;
+}
+.article div{
+    display: flex;
+    flex-flow: column;
+    margin: 0px 10px 0 10px;
+}
+.article button{
+    margin: auto 0 0 0px;
+    transition: 0.3s;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.article button:hover{
+    background-color: #c58ffa;
+    color: #333;
+}
