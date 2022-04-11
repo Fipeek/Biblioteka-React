@@ -1,19 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './Nav.module.css';
+import './reset.css';
 
-const Nav = () => {
+const Nav = (props) => {
     return ( 
-        <nav className={styles.navigation}>
+        <nav       className={`${styles['navigation']} ${props.burgerState && styles.active}`}>
             <ul>
                 <li>Home</li>
                 <li>Dodaj Ksiazke</li>
                 <li>Lista ksiazek</li>
             </ul>
-            <div class="hamburger">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>  
+        
         </nav>
      );
 }
