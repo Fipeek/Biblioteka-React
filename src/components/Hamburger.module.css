@@ -4,7 +4,7 @@
         display: none;
     }
 }
-@media(max-width: 1031px){
+@media(max-width: 1038px){
     .hamburger{
         display: block;
         width: 30px;

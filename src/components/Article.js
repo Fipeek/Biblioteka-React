@@ -11,7 +11,6 @@ const Article = (props) => {
 
   const makeTextShorter = (text) => {
     let shorterText = text;
-    console.log(shorterText.length);
     shorterText = shorterText.slice(0, 350);
     return shorterText;
   };

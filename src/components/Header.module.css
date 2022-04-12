@@ -27,6 +27,11 @@
     font-size: 35px;
     margin: 0 30px;
 }
+@media(max-width: 1128px){
+    .navbar h1{
+        font-size: 30px;
+    }
+}
 @media(max-width: 500px){
     .navbar h1{
         font-size: 25px;

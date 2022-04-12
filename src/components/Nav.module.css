@@ -14,12 +14,27 @@
     padding: 5px 10px;  
     border: 1px solid transparent;
 }
+.navigation li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
 .navigation li:hover{
     cursor: pointer;
     background-color: #360e5e;
     border-radius: 10px;
 }
-@media(max-width: 1031px){
+@media(max-width: 1230px){
+    .navigation li{
+        font-size: 20px;
+    }
+}
+@media(max-width: 1124px){
+    .navigation li{
+        font-size: 18px;
+    }
+}
+@media(max-width: 1038px){
     .navigation{
         top:0px;
         right: -100vh;
@@ -43,6 +58,13 @@
         font-size: 20px;
         border-top: 2px solid #e8e8e8;
         width: 100%;
+    }
+    .navigation li a{
+        color: #333;
+        display: block;
+    }
+    .navigation li a:hover{
+        color: #fff;
     }
     .navigation li:hover{
         border-radius: 0;
