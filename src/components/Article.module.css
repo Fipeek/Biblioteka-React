@@ -16,7 +16,7 @@ flex-flow: row;
     color: white;
 }
 .article img{
- width: 700px;
+ width: 300px;
  height: 300px;
 }
 .article div{
@@ -37,16 +37,7 @@ flex-flow: row;
 @media(max-width: 1650px){
     .article p{
         font-size: 20px;
-
     }  
-}
-@media(max-width: 1380px){
-    .article p{
-        font-size: 18px;
-    }  
-    .article button {
-        font-size: 20px;
-    }
 }
 @media(max-width: 1300px){
     
@@ -58,30 +49,20 @@ flex-flow: row;
     }
 
 }
-@media(max-width:1188px){
+@media(max-width:1088px){
     .article p {
         font-size: 16px;
     }
 }
-@media(max-width: 1050px){
-    .article h1{
-        font-size: 25px;
-    }
-    .article h2{
-        font-size: 18px;
-    }
-    .article button {
-        font-size: 18px;
-    }
-}
-@media(max-width: 1000px){
+
+@media(max-width: 900px){
     .article img{
         width: 300px;
         height: 300px;
     }
     .article button{
         font-size: 15px;
-        padding: 4  px 2.5px;
+        padding: 4px 2.5px;
     }
 }
 @media(max-width: 860px){
@@ -90,7 +71,7 @@ flex-flow: row;
         height: 250px;
     }
     .article h1{
-        font-size: 20px;
+        font-size: 25px;
     }
     .artcile h2{
         font-size: 15px;
@@ -98,4 +79,38 @@ flex-flow: row;
     .article p{
         font-size: 13px;
     }
+}
+@media(max-width: 730px){
+    .article h1{
+        font-size: 20px;
+    }
+    .artcile h2{
+        font-size: 15px;
+    }
+    .article p{
+        font-size: 12px;
+    }
+    .article button{
+        font-size: 12px;
+    }
+}
+@media(max-width: 616px){
+    .article img{
+       display: none;
+    }
+    .article h1{
+        font-size: 25px;
+    }
+    .artcile h2{
+        font-size: 20px;
+    }
+    .article p{
+        font-size: 15px;
+    }
+    .article button{
+        margin: 10px 0;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
 }

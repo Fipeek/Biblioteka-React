@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import News from "./News";
+import Articles from './Articles';
 import libraryImage from "../assets/books2.jpg";
 import "./reset.css";
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
           <p>Nasza biblioteka jest wyposażona w najrzadsze egzemplarze</p>
         </div>
       </div>
-      <News></News>
+      <Articles></Articles>
     </section>
   );
 };

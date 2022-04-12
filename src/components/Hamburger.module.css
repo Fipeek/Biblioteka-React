@@ -25,7 +25,10 @@
     }
     .hamburger.active div{
         background-color: black;
-        
+    }
+    .hamburger.active{
+        position: fixed;
+        right: 0;
     }
     .hamburger.active div:nth-of-type(2){
         opacity: 0;
