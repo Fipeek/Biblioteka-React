@@ -1,0 +1,21 @@
+footer{
+    background-color: #360e5e;
+    box-shadow: 0 0 5px white;
+    color: white;
+    padding: 50px;
+    display: flex;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: center;
+    margin-top: 150px;
+}
+.contact h1{
+    font-size: 30px;
+}
+.contact p{
+    font-size: 25px;
+}
+.contact{
+    text-align: center;
+}
+

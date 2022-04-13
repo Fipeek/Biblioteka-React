@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import Articles from './Articles';
 import libraryImage from "../assets/books2.jpg";
 import "./reset.css";
+import Footer from "./Footer";
 const Home = () => {
   return (
     <section className={styles.home}>
@@ -17,6 +18,8 @@ const Home = () => {
         </div>
       </div>
       <Articles></Articles>
+      <Footer>
+      </Footer>
     </section>
   );
 };
