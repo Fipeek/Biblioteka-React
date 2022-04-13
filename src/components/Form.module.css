@@ -32,6 +32,32 @@
 .addArticle button:hover{
     background-color: #8615f0;
     cursor: pointer;
+}
+.error{
+    width: 600px;
+    margin: 0 auto;
+    padding:0;
+}
+.error div{
+    height: 200px;
+    padding: 0;
+    background-color: white;
+}
 
+.error header{
+    background-color: #360e5e;
+    padding: 0px; 
+}
+
+.error h1{
+    font-size: 31px;
+    margin: 20px 0 0 0 ;
+    color: white;
+    padding: 10px
+}
+.error p{
+    margin: 10px 0 0 5px;
+    color: black;
+    font-size: 20px;
 }
 

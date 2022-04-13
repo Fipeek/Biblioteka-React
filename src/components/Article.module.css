@@ -1,6 +1,7 @@
 .article {
 display: flex;
 flex-flow: row;
+/* flex-wrap: wrap; */
 }
 .article h1{
     font-size: 35px;
@@ -14,6 +15,7 @@ flex-flow: row;
     text-align: justify;
     font-size: 22px;
     color: white;
+    text-overflow: initial;
 }
 .article img{
  width: 300px;

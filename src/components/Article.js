@@ -7,8 +7,6 @@ import { useState } from "react";
 import FullArticle from "./FullArticle";
 import { ReactDOM } from "react-dom";
 const Article = (props) => {
-  const [isMobile, setIsMobile] = useState(false);
-
   const makeTextShorter = (text) => {
     let shorterText = text;
     shorterText = shorterText.slice(0, 350);
@@ -31,9 +29,7 @@ const Article = (props) => {
         </div>
       </div>
       {isArticleClicked && (
-        // <Backdrop onClick={articleClickHandler}>
           <FullArticle title={props.title} date={props.date} text={props.text} author={props.author} onClick={articleClickHandler}></FullArticle>
-        // </Backdrop>
       )}
     </Card>
   );
