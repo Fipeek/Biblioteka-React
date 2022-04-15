@@ -39,6 +39,7 @@
     padding:0;
 }
 .error div{
+    margin-top: 53%;
     height: 200px;
     padding: 0;
     background-color: white;
@@ -60,4 +61,13 @@
     color: black;
     font-size: 20px;
 }
-
+@media(max-width: 644px){
+    .error{
+        width: 500px
+    }
+}
+@media(max-width: 520px){
+    .error{
+        width: 300px
+    }
+}

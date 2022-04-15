@@ -21,7 +21,7 @@ const Nav = (props) => {
           <Link> Dodaj Ksiazke</Link>
         </li>
         <li>
-          <Link>Lista ksiazek </Link>
+          <Link to='/BooksPage'>Lista ksiazek </Link>
         </li>
       </ul>
     </nav>

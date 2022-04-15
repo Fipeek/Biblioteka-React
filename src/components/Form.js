@@ -68,7 +68,6 @@ const Form = () => {
   const articleTextHandler = (event) => {
     setArticleText(event.target.value);
   };
-  console.log(isFormValid);
   const closeBackdrop = () => {
     setFormValidation(true);
   };
