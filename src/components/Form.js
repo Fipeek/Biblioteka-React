@@ -71,6 +71,9 @@ const Form = () => {
   const closeBackdrop = () => {
     setFormValidation(true);
   };
+
+
+  
   return (
     <form className={styles.addArticle} onSubmit={submitHandler}>
       <label>Tytul</label>

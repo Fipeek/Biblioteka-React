@@ -5,7 +5,6 @@ import image from "../assets/bookImage.jpg";
 const Book = (props) => {
   return (
     <div className={styles.book}>
-      <header></header>
       <img src={image}></img>
       <div>
         <h1>{props.title}</h1>

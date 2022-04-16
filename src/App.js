@@ -7,6 +7,7 @@ import { Route } from "react-router-dom";
 import ArticlesContext from "./store/articles-context";
 import BooksPage from "./components/pages/BooksPage";
 import BooksContext from "./store/books-context";
+import AddBook from "./components/pages/AddBook";
 const DUMMY_ARTICLES = [
   {
     id: "",
@@ -150,6 +151,9 @@ function App() {
       </Route>
       <Route path="/BooksPage">
         <BooksPage></BooksPage>
+      </Route>
+      <Route path='/AddBook'>
+        <AddBook></AddBook>
       </Route>
       </BooksContext.Provider>
     </ArticlesContext.Provider>

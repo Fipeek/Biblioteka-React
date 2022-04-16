@@ -1,13 +1,11 @@
 footer{
-    background-color: #360e5e;
+    background-color: #3b0274;
     box-shadow: 0 0 5px white;
     color: white;
     padding: 50px;
     display: flex;
-    /* align-items: center; */
-    /* align-content: center; */
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 .contact h1{
     font-size: 30px;

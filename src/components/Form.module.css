@@ -1,6 +1,6 @@
 .addArticle{
-    background-color: #52099b;
-    margin: 100px auto;
+    background-color: #3b0274;
+    margin: 180px auto;
     display: flex;
     flex-flow: column;
     padding: 10px;
@@ -24,7 +24,7 @@
     width: 80%;
 }
 .addArticle button{
-    background-color: #360e5e;
+    background-color: #271a35c0;
     margin: 20px 0 0 0;
     width: 150px;
     height: 50px;
