@@ -3,6 +3,9 @@ import styles from "./Form.module.css";
 import BooksContext from "../store/books-context";
 import Button from "./UI/Button";
 import { useContext, useState } from "react";
+import Card from "./UI/Card";
+import  ReactDOM  from "react-dom";
+import Backdrop from "./UI/Backdrop";
 const AddBookForm = () => {
   const ctx = useContext(BooksContext);
   const [author, setAuthor] = useState("");
@@ -21,15 +24,16 @@ const AddBookForm = () => {
       formValidator = false;
       return "Nieprawidłowe dane! Wartości nie mogą być puste.";
     }
-    if (title.length > 30 || author.length > 20 || description.lenght < 100) {
+    if (title.length > 30 || author.length > 20 || description.length > 100) {
       formValidator = false;
-      return "Nieprawidłowe dane! Tytuł i autor mogą mieć maksymalnie 30 znaków, a 100.";
+      return "Nieprawidłowe dane! Tytuł i autor mogą mieć maksymalnie 30 znaków, a opis 100.";
     }
     formValidator = true;
   };
   const submitHandler = (event) => {
-    event.preventDefault();
-    const errorMessage = checkFormValidation(title, author, description);
+      event.preventDefault();
+      setErrorMessage(checkFormValidation(title,author,description));
+      setFormValidation(formValidator);
     if (formValidator) {
       const book = {
         key: Math.random,
@@ -75,6 +79,23 @@ const AddBookForm = () => {
         cols="20"
       ></textarea>
       <Button type="submit">Zatwierdź</Button>
+      {ReactDOM.createPortal(
+        !isFormValid && (
+          <Backdrop onClick={closeBackdrop}>
+              <div className={styles.error}>
+
+            <Card>
+                <header>
+              <h1>Zły input</h1>
+
+                </header>
+              <p >{errorMessage}</p>
+            </Card>
+              </div>
+          </Backdrop>
+        ),
+        document.getElementById("backdrop-root")
+      )}
     </form>
   );
 };

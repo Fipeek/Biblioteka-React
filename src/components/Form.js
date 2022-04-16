@@ -46,7 +46,7 @@ const Form = () => {
       articleText: articleText,
     };
     setErrorMessage(checkFormValidation(title, author, articleText));
-    console.log(errorMessage);
+
     if (formValidator) {
       ctx.articles.push(userData);
     }
