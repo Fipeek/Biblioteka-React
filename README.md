@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Opis
+Projekt stworzony z myślą o użytkowniku dodającym ciekawe artykuły na swoją strone oraz przeczytane książki. Aplikacja posiada 4 strony: Strone główną, liste książek, dodawnie artykułów i książek.
 
 ## Available Scripts
 
