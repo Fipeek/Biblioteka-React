@@ -1,8 +1,6 @@
-.home{
+.Banner{
     width: 100%;
     background-color: #333;
-    height: calc(100vh - 100px);
-    position: relative;
 }
  .info{
     padding: 50px;
@@ -28,6 +26,11 @@
     background-image: url(../assets/books2.jpg);
     background-position: center;
     background-size: cover;
+}
+@media(min-width: 1600px){
+    .banner{
+        /* height: calc(80vh - 100px); */
+    }
 }
 @media(max-width:1355px){
     .info h1{

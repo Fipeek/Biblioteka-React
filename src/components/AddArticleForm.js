@@ -14,7 +14,7 @@ const Form = () => {
   const [isFormValid, setFormValidation] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
   let formValidator = true;
-  const checkFormValidation = (title, author, articleText) => {
+  const checkFormValidation = (title, author, articleText) => {  //walidacja inputu
     formValidator = false;
     if (
       title.trim() === "" ||
@@ -37,17 +37,17 @@ const Form = () => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    const userData = {
-      id: Math.random,
-      key: Math.random,
-      author: author,
-      title: title,
-      date: date,
-      articleText: articleText,
-    };
     setErrorMessage(checkFormValidation(title, author, articleText));
-
+    
     if (formValidator) {
+      const userData = {
+        id: Math.random,
+        key: Math.random,
+        author: author,
+        title: title,
+        date: date,
+        articleText: articleText,
+      };
       ctx.articles.push(userData);
     }
     setFormValidation(formValidator);

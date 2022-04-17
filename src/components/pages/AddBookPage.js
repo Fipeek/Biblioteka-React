@@ -2,9 +2,8 @@ import Header from "../Header";
 import AddBookForm from "../AddBookForm";
 import Footer from "../Footer";
 import React from "react";
-import { ReactFragment } from "react";
 
-const AddBook = () => {
+const AddBookPage = () => {
     return ( <React.Fragment>
         <Header></Header>
         <AddBookForm></AddBookForm>
@@ -12,4 +11,4 @@ const AddBook = () => {
     </React.Fragment> );
 }
  
-export default AddBook;
+export default AddBookPage;

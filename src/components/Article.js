@@ -2,10 +2,8 @@ import Card from "./UI/Card";
 import styles from "./Article.module.css";
 import articleImg from "../assets/article.jpeg";
 import Button from "./UI/Button";
-import Backdrop from "./UI/Backdrop";
 import { useState } from "react";
 import FullArticle from "./FullArticle";
-import { ReactDOM } from "react-dom";
 const Article = (props) => {
   const makeTextShorter = (text) => {
     let shorterText = text;

@@ -1,16 +1,15 @@
 import Header from "../Header";
-import Form from "../Form";
+import AddArticleForm from "../AddArticleForm";
 import React from "react";
 import Footer from "../Footer";
-import { ReactFragment } from "react";
-const AddArticle = () => {
+const AddArticlePage = () => {
     return ( 
         <React.Fragment>
             <Header></Header>
-            <Form></Form>
+            <AddArticleForm></AddArticleForm>
         <Footer></Footer>
         </React.Fragment>
      );
 }
  
-export default AddArticle;
+export default AddArticlePage;

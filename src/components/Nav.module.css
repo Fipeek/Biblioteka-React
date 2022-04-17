@@ -37,7 +37,7 @@
 @media(max-width: 1038px){
     .navigation{
         top:0px;
-        right: -100vh;
+        right: -200vh;
         position: fixed;
         height: 100%;
         width: calc(100vw - 50%);

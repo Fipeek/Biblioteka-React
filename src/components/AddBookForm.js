@@ -4,8 +4,9 @@ import BooksContext from "../store/books-context";
 import Button from "./UI/Button";
 import { useContext, useState } from "react";
 import Card from "./UI/Card";
-import  ReactDOM  from "react-dom";
+import ReactDOM from "react-dom";
 import Backdrop from "./UI/Backdrop";
+
 const AddBookForm = () => {
   const ctx = useContext(BooksContext);
   const [author, setAuthor] = useState("");
@@ -13,8 +14,8 @@ const AddBookForm = () => {
   const [description, setDescription] = useState("");
   const [isFormValid, setFormValidation] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
-  let formValidator = true;
-  const checkFormValidation = (title, author, description) => {
+  let formValidator = true; 
+  const checkFormValidation = (title, author, description) => { // sprawdzenie czy input jest poprawny
     formValidator = false;
     if (
       title.trim() === "" ||
@@ -29,11 +30,13 @@ const AddBookForm = () => {
       return "Nieprawidłowe dane! Tytuł i autor mogą mieć maksymalnie 30 znaków, a opis 100.";
     }
     formValidator = true;
+    return "";
   };
+
   const submitHandler = (event) => {
-      event.preventDefault();
-      setErrorMessage(checkFormValidation(title,author,description));
-      setFormValidation(formValidator);
+    event.preventDefault();
+    setErrorMessage(checkFormValidation(title, author, description));
+    setFormValidation(formValidator);
     if (formValidator) {
       const book = {
         key: Math.random,
@@ -41,11 +44,9 @@ const AddBookForm = () => {
         title: title,
         description: description,
       };
-
       ctx.books.push(book);
-    }
-    else{
-        console.log(errorMessage);
+    } else {
+      console.log(errorMessage);
     }
     setAuthor("");
     setTitle("");
@@ -82,16 +83,14 @@ const AddBookForm = () => {
       {ReactDOM.createPortal(
         !isFormValid && (
           <Backdrop onClick={closeBackdrop}>
-              <div className={styles.error}>
-
-            <Card>
+            <div className={styles.error}>
+              <Card>
                 <header>
-              <h1>Zły input</h1>
-
+                  <h1>Zły input</h1>
                 </header>
-              <p >{errorMessage}</p>
-            </Card>
-              </div>
+                <p>{errorMessage}</p>
+              </Card>
+            </div>
           </Backdrop>
         ),
         document.getElementById("backdrop-root")
