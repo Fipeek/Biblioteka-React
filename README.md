@@ -1,5 +1,5 @@
 ## Opis
-Projekt stworzony z myślą o użytkowniku dodającym ciekawe artykuły na swoją strone oraz przeczytane książki. Aplikacja posiada 4 strony: Strone główną, liste książek, dodawnie artykułów i książek.
+Projekt stworzony z myślą o użytkowniku dodającym ciekawe artykuły na swoją strone oraz przeczytane książki. Aplikacja na obecną chwilę posiada funkcjonalności takie jak: wyświetlanie artykułów i książek oraz dodawanie ich. 
 
 ## Available Scripts
 
