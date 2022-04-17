@@ -1,21 +1,18 @@
 .books ul {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
 }
-@media (max-width: 700px){
-    .books ul{
-        margin: 20px;
-        /* align-items: center; */
-        /* justify-content: center; */
-    }
+@media (max-width: 700px) {
+  .books ul {
+    margin: 20px;
+  }
 }
-@media(max-width:400px){
-    .books ul{
-        margin: 10px;
-        justify-content: center;
-    }
-    
+@media (max-width: 400px) {
+  .books ul {
+    margin: 10px;
+    justify-content: center;
+  }
 }

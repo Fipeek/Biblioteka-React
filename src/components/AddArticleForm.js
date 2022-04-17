@@ -5,7 +5,7 @@ import Backdrop from "./UI/Backdrop";
 import ArticlesContext from "../store/articles-context";
 import Card from "./UI/Card";
 import ReactDOM from "react-dom";
-const Form = () => {
+const AddArticleForm = () => {
   const ctx = useContext(ArticlesContext);
   const [author, setAuthor] = useState("");
   const [title, setTitle] = useState("");
@@ -14,7 +14,8 @@ const Form = () => {
   const [isFormValid, setFormValidation] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
   let formValidator = true;
-  const checkFormValidation = (title, author, articleText) => {  //walidacja inputu
+  const checkFormValidation = (title, author, articleText) => {
+    //walidacja inputu
     formValidator = false;
     if (
       title.trim() === "" ||
@@ -38,7 +39,7 @@ const Form = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     setErrorMessage(checkFormValidation(title, author, articleText));
-    
+
     if (formValidator) {
       const userData = {
         id: Math.random,
@@ -72,8 +73,6 @@ const Form = () => {
     setFormValidation(true);
   };
 
-
-  
   return (
     <form className={styles.addArticle} onSubmit={submitHandler}>
       <label>Tytul</label>
@@ -94,23 +93,20 @@ const Form = () => {
       {ReactDOM.createPortal(
         !isFormValid && (
           <Backdrop onClick={closeBackdrop}>
-              <div className={styles.error}>
-
-            <Card>
+            <div className={styles.error}>
+              <Card>
                 <header>
-              <h1>Zły input</h1>
-
+                  <h1>Zły input</h1>
                 </header>
-              <p >{errorMessage}</p>
-            </Card>
-              </div>
+                <p>{errorMessage}</p>
+              </Card>
+            </div>
           </Backdrop>
         ),
         document.getElementById("backdrop-root")
       )}
-   
     </form>
   );
 };
 
-export default Form;
+export default AddArticleForm;
