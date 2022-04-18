@@ -7,7 +7,6 @@ Strona główna zawierająca dodane artykuły przez użytkownika oraz banner.
 
 ![biblioteka_Home](https://user-images.githubusercontent.com/100696349/163798274-26c88ac7-923b-432b-8d9b-c6e5e7ce0b03.png)
 
-Wersja mobilna:
 ![biblioteka_homeMobile2](https://user-images.githubusercontent.com/100696349/163798381-0f5526c1-e0de-4c6e-9cc2-3a21894870c3.png)
 
 ![biblioteka_homeMobile](https://user-images.githubusercontent.com/100696349/163798393-99271b2d-e29c-49c7-8ba1-3831853e214e.png)
