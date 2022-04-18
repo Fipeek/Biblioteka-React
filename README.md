@@ -1,6 +1,39 @@
 ## Opis
 Projekt stworzony z myślą o użytkowniku dodającym ciekawe artykuły  oraz przeczytane książki na swoją strone. Aplikacja na obecną chwilę posiada funkcjonalności takie jak: wyświetlanie artykułów i książek oraz dodawanie ich. Cała strona jest w pełni responsywna. Projekt jest ciągle rozwijany.
 
+
+## Home 
+Strona główna zawierająca dodane artykuły przez użytkownika oraz banner.
+
+![biblioteka_Home](https://user-images.githubusercontent.com/100696349/163798274-26c88ac7-923b-432b-8d9b-c6e5e7ce0b03.png)
+
+Wersja mobilna:
+![biblioteka_homeMobile2](https://user-images.githubusercontent.com/100696349/163798381-0f5526c1-e0de-4c6e-9cc2-3a21894870c3.png)
+
+![biblioteka_homeMobile](https://user-images.githubusercontent.com/100696349/163798393-99271b2d-e29c-49c7-8ba1-3831853e214e.png)
+
+## Aktualności
+Sekcja zawierająca artykuły dodane przez użytkownika
+
+![biblioteka4](https://user-images.githubusercontent.com/100696349/163798448-4839d297-e6b8-4085-a6b0-c96f466f175e.png)
+![biblioteka5](https://user-images.githubusercontent.com/100696349/163798579-3e71a6b9-8e97-4258-b2fc-7f10c2ce01eb.png)
+
+Wersja Mobilna:
+![mobile_aktualnosci](https://user-images.githubusercontent.com/100696349/163798715-5761c5aa-5abd-41b8-8fa3-e525f28ba76c.png)
+
+![FullArticleMobile](https://user-images.githubusercontent.com/100696349/163798606-5aed13a1-358a-42a4-bc3c-c320145a6e21.png)
+
+## Dodawanie Artykułów
+![biblioteka_addArtcile](https://user-images.githubusercontent.com/100696349/163798754-5b3942ad-4b51-47a1-96c8-fba24222de8f.png)
+
+## Dodawanie Książek
+![biblioteka_addBook](https://user-images.githubusercontent.com/100696349/163798769-1f7540b8-8477-4faa-842f-a643af5dc31b.png)
+
+## Lista książek
+
+![biblioteka_books](https://user-images.githubusercontent.com/100696349/163798844-135f975b-6db2-4013-a229-9097c2fafa79.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
